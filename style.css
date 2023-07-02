@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 5px 10px;
+}
+
+.navbar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#main {
+    padding: 10px;
+}
+
+#main h2 {
+    margin-left: 30px;
+    color: rgb(57, 56, 55);
+    margin-bottom: 10px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.user-item {
+    margin-top: 15px;
+    width: 320px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    height: 150px;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.234);
+}
+
+.item-top {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.item-top span {
+    margin-left: 5px;
+    background-color: #fff;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: rgb(44, 44, 209);
+    width: 40px;
+    font-size: 12px;
+}
+
+.item-top i {
+    margin-right: 15px;
+    color: rgb(12, 12, 108);
+}
+
+.box p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.tag {
+    background-color: rgba(235, 41, 41, 0.244);
+    color: rgb(202, 51, 51);
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.dates {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color: #303030ae;
+}
+
+#box-user {
+    width: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+}
+
+.dates i {
+    margin-right: 5px;
+}
+
+.date {
+    display: flex;
+}
+
+.danger {
+    background-color: rgba(235, 41, 41, 0.244);
+    color: rgb(202, 51, 51);
+}
+
+.success {
+    background-color: rgba(122, 235, 41, 0.244);
+    color: rgb(79, 202, 51);
+}
+
+.warning {
+    background-color: rgba(235, 225, 41, 0.256);
+    color: rgb(119, 115, 7);
+}
+
+@media screen and (max-width: 350px) {
+    .navbar .user {
+        height: 30px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+}
